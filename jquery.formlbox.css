@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+.lbox_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    display: none;
+    background-image:url('gray_overlay.png');
+    cursor: wait;
+}
+
+.lbox {
+    background: transparent;
+    border: none;
+    position: absolute;
+    cursor: default;
+}
+
+.lbox_arrow {
+  border-color: transparent black transparent transparent;
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    display: hidden;
+}
+
+.lbox_form {
+    position: absolute;
+    padding: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.lbox_form input
+{
+	background: white;
+	border: 1px solid gray;
+}
+
+.lbox_form input[type = "submit"]
+{
+	margin: auto;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	background: white; 
+	border: 1px solid black;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.lbox_form input[type = "submit"]:hover
+{
+	opacity: 0.8;
+}
